@@ -1,0 +1,15 @@
+body {
+    z-index: 1000;
+    position: absolute;
+    background-color: transparent;
+    --color-primary: #FFFFFF;
+    --color-primary-dark: #828282;
+    --color-secondary: #5252ca; 
+    --color-tertiary: #ecd503;
+    
+
+
+
+
+
+}
