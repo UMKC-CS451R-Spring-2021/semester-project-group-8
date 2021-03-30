@@ -1,15 +1,120 @@
+head{
+    position: relative;
+}
+
 body {
+/*to be added to main css file*/
+
     z-index: 1000;
+    /*setting bg image positioning and general alignment*/
     position: absolute;
-    background-color: transparent;
-    --color-primary: #FFFFFF;
-    --color-primary-dark: #828282;
-    --color-secondary: #5252ca; 
-    --color-tertiary: #ecd503;
+    margin-left: 45%;
+    margin-top: 120px;
+    align-content: center;
+    /*UMKC Pathway format with image files*/
+    background-image: url("logo.png"), url("UM_UMKC_HEADER2_1.gif"), url("bg-img.jpg");
+    background-repeat:no-repeat, no-repeat, no-repeat;
+    background-size: 120px 50px, 1440px 80px, 1440px 720px;
+    /*these colors are similar to UMKC theme colors, not sure if they need to be used but saving code
+    for now just in case*/
+    --color-white: #FFFFFF;
+    --color-gray: #828282;
+    --color-blue: #5252ca; 
+    --color-yellow: #ecd503;
+    --color-error:#cc3333;
+    --color-success: #4bb544; 
+
+}
+
+input{
+
+    height: 20px;
+    font-weight:bold;
+}
+h1{
+
+    font-family: Times;
+    text-align: center;
+    background-position: center;
+    margin-bottom: 25px;
+    font-size: 30px;    
+}
+h2{
+
+    font-family: Times;
+    text-align: left;
+    margin-bottom: 1px;
+    font-size: 17px;
+
+}
+
+.container{
+    border-color:var(--color-blue) var(--color-yellow);
+    border-width:10px;
+    border-style:outset;
+    padding:1rem;
+    width: 500 px;
+    max-width: 500px;
+    align-content: center;
+    margin: 1rem 1rem 1rem -4rem;
+    background-color: var(--color-white);
+    font-family: Times;
+    /*formatting issue with container: padding 1rem per side means "container" increases size when focused on either
+    entry field.  Need to fix border placement while keeping padding.*/
     
+}
 
+.container,
+.form__input,
+.form__button{
+    font: 500 1rem arial;
+    
+}
 
+.form > *:first-child{
+    margin-top: 0;
+}
+.form > *:last-child{
+    margin-bottom: 0;
+}
 
+.form__title{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: Times;
+}
 
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: Times;
+}
+
+.form__message--success {
+    color: var(--color-success);
+}
+
+.form__message--error{
+    color: var(--color-error);
+}
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border: 1px solid var(--color-gray);
+    outline: none;
+    transition: background 0.2s, border-color 0.2s;
+    font-family: Times;
+}
+
+.form__input:focus{
+    border-color: var(--color-blue);
+    border-width: 2px;
+    font-family: Times;
 
 }

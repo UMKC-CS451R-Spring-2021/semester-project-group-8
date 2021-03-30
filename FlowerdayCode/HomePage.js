@@ -1,46 +1,42 @@
-
-//Login Page Draft 
-
-//import User Table file
-
-//Global Variables
-var userNameInput = "";
-var passwordInput = "";
-
-
-//checkCredentials is a function to verify username/password
-
-function getInfo(){
-
-    //import UN/pass table
-
-    //UNTable = file.importedTable;
-
+function setFormMessage(formElement, type, message){
+    const messageElement = formElement.querySelector(".form__message");
     
+    messageElement.textContent = message;
+    messageElement.classList.remove("form__message--success", "form__message--error");
+    messageElement.classList.add('form__message--${type}');
+}
 
-    //run userName and password through database
+setFormMessage(loginForm, "success", "You're logged in!");
 
-    /*for (var i = 0; i < UNTable.length; i++_){
-        if (unameString != any element in UN section of table  OR 
-        (unameString == some element in table AND passString != matching password element))
-            Return "Username and/or password incorrect, please try again"
-    
+document.addEventListener("DOMContentLoaded", () => {
+  const loginForm = document.querySelector("#login");
 
-        else if (unameString == any element in the UN section on the table &&
-        passString == corresponding password in table)
-            permit user to access main navigation page
+  document.querySelector("#linkLogin").addEventListener("click", e =>{
+      e.preventDefault();
+  });
 
-        else 
-            return "unknown error, please refresh the page and try again"
-        }
-    
-    */
+  loginForm.addEventListener("submit", e => {
+      e.preventDefault();
 
-};
+      //peform fetch from django
 
-getInfo();
-
-
-
-
-     
+      setFormMessage(loginForm, "error", "Invalid username/password combination");
+  });
+});
+//BELOW CODE IS STARTER TEMPLATE FOR FETCHING FROM DJANGO
+/*
+$.ajax({
+    type: "GET",
+    url: '/my_def_in_view',
+    data: {
+        "result": result,
+    },
+    dataType: "json",
+    success: function (data) {
+        // any process in data
+        alert("successfull")
+    },
+    failure: function () {
+        alert("failure");
+    }
+});*/
