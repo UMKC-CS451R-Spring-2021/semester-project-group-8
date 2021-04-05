@@ -1,7 +1,11 @@
-# Semester Project Group 8
+# Semester Project Group 8  
 
-## Members
-Ryan Moody
-Thom Martin
-Elizabeth Nastoff
+## Members  
+Ryan Moody  
+Thom Martin  
+Elizabeth Nastoff  
+Zunair Ahmed  
+Lake Gatton  
+Adam Flowerday  
+
 
