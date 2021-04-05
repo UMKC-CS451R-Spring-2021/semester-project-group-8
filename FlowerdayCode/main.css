@@ -14,7 +14,9 @@ body {
     /*UMKC Pathway format with image files*/
     background-image: url("logo.png"), url("UM_UMKC_HEADER2_1.gif"), url("bg-img.jpg");
     background-repeat:no-repeat, no-repeat, no-repeat;
-    background-size: 120px 50px, 1440px 80px, 1440px 720px;
+
+    background-size: 120px 50px, 100vw 80px, 1980px 1080px;
+
     /*these colors are similar to UMKC theme colors, not sure if they need to be used but saving code
     for now just in case*/
     --color-white: #FFFFFF;
