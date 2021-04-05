@@ -6,23 +6,29 @@ function setFormMessage(formElement, type, message){
     messageElement.classList.add('form__message--${type}');
 }
 
-setFormMessage(loginForm, "success", "You're logged in!");
+//setFormMessage(loginForm, "success", "You're logged in!");
+
+function setInputError(inputElement, message) {
+    inputElement.classList.add("form__input--error");
+    inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
+};
+
+function clearInputError(inputElement){
+    inputElement.classList.remove("form__input--error");
+    inputElement.parentElement.querySelector(".form__input-error-message").textContent= "";
+};
 
 document.addEventListener("DOMContentLoaded", () => {
-  const loginForm = document.querySelector("#login");
+  const submit = document.querySelector("#login");
+});
 
-  document.querySelector("#linkLogin").addEventListener("click", e =>{
-      e.preventDefault();
-  });
-
-  loginForm.addEventListener("submit", e => {
+  submit.addEventListener("submit", e => {
       e.preventDefault();
 
       //peform fetch from django
 
-      setFormMessage(loginForm, "error", "Invalid username/password combination");
+      setInputError(submit, "Invalid username/password combination");
   });
-});
 //BELOW CODE IS STARTER TEMPLATE FOR FETCHING FROM DJANGO
 /*
 $.ajax({

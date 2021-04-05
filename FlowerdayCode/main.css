@@ -37,15 +37,10 @@ h1{
     text-align: center;
     background-position: center;
     margin-bottom: 25px;
-    font-size: 30px;    
-}
-h2{
-
-    font-family: Times;
-    text-align: left;
-    margin-bottom: 1px;
-    font-size: 17px;
-
+    font-size: 30px;
+   
+    
+     
 }
 
 .container{
@@ -53,14 +48,15 @@ h2{
     border-width:10px;
     border-style:outset;
     padding:1rem;
-    width: 500 px;
-    max-width: 500px;
-    align-content: center;
-    margin: 1rem 1rem 1rem -4rem;
-    background-color: var(--color-white);
+    width: 250px;
+    max-width: 250px;
+    height:275px;
+    max-height:275px;
+    align-content: center; 
+    margin: 1rem 1rem 1rem -3rem;
+    background-color:white;
     font-family: Times;
-    /*formatting issue with container: padding 1rem per side means "container" increases size when focused on either
-    entry field.  Need to fix border placement while keeping padding.*/
+    
     
 }
 
@@ -68,6 +64,11 @@ h2{
 .form__input,
 .form__button{
     font: 500 1rem arial;
+    
+}
+
+.form--hidden{
+    display: none;
     
 }
 
@@ -82,8 +83,9 @@ h2{
     margin-bottom: 2rem;
     text-align: center;
     font-family: Times;
+    color:rgb(36, 36, 88);
+    
 }
-
 .form__message{
     text-align: center;
     margin-bottom: 1rem;
@@ -103,7 +105,7 @@ h2{
 
 .form__input{
     display: block;
-    width: 100%;
+    width: 90%;
     padding: 0.75rem;
     box-sizing: border-box;
     border: 1px solid var(--color-gray);
@@ -118,3 +120,52 @@ h2{
     font-family: Times;
 
 }
+
+.form__input--error{
+    color:var(--color-error);
+    border-color: var(--color-error);
+
+}
+
+.form__input-error-message{
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form__button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: var(--color-blue);
+}
+
+.form__button:hover{
+    background:navy;
+
+}
+
+.form__button:active{
+    transform: scale(0.98);
+
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link{
+    color:rgb(131, 1, 163);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
