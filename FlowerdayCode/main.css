@@ -12,9 +12,9 @@ body {
     margin-top: 120px;
     align-content: center;
     /*UMKC Pathway format with image files*/
-    background-image: url("logo.png"), url("UM_UMKC_HEADER2_1.gif"), url("bg-img.jpg");
-    background-repeat:no-repeat, no-repeat, no-repeat;
-    background-size: 120px 50px, 1440px 80px, 1440px 720px;
+    background-image: url("logo.png"), url("UM_UMKC_HEADER2_1.gif"), url("UMKC_BG1.jpg");
+    background-repeat: no-repeat;
+    background-size: 120px 50px, 100vw 80px, cover;
     /*these colors are similar to UMKC theme colors, not sure if they need to be used but saving code
     for now just in case*/
     --color-white: #FFFFFF;
@@ -36,7 +36,7 @@ h1{
     font-family: Times;
     text-align: center;
     background-position: center;
-    margin-bottom: 25px;
+    margin-bottom: 10%;
     font-size: 30px;
    
     
@@ -50,8 +50,8 @@ h1{
     padding:1rem;
     width: 250px;
     max-width: 250px;
-    height:275px;
-    max-height:275px;
+    height:300px;
+    max-height:300px;
     align-content: center; 
     margin: 1rem 1rem 1rem -3rem;
     background-color:white;
@@ -80,15 +80,14 @@ h1{
 }
 
 .form__title{
-    margin-bottom: 2rem;
     text-align: center;
     font-family: Times;
     color:rgb(36, 36, 88);
     
 }
 .form__message{
+
     text-align: center;
-    margin-bottom: 1rem;
     font-family: Times;
 }
 
