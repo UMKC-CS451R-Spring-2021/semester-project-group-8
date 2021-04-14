@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Class Scheduling System</title>
+      <link rel="stylesheet" href="Ryan_main.css">
+   </head>
+   <body>
+      <!-- ************************************navbar starts**************************** -->
+      <div class="nav-wrapper">
+         <div class="burger-menu">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+         </div>
+         <div>
+            <a href="#" class="logo"><img src="./images/logo.png" alt="" /></a>
+         </div>
+         <ul class="navlinks">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="#">Instructors</a></li>
+            <li class="nav-link"><a href="generate-schedule.html">Generate Schedule</a></li>
+            <li class="nav-link"><a href="login.html">Logout</a></li>
+         </ul>
+      </div>
+      <!-- *************************************navbar ends**************************************** -->
+      <div class="scnd__form-container">
+         <h1 class = "form__title">View All Instructors</h1>
+         <hr>
+         <table class="table">
+            <tr>
+               <th>ID</th>
+               <th>Name</th>
+               <th>Classes</th>
+               <th>Email</th>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td>Instructor 1</td>
+               <td>IT</td>
+               <td>Instructor1@gmail.com</td>
+            </tr>
+            <tr>
+               <td>2</td>
+               <td>Instructor 2</td>
+               <td>IT</td>
+               <td>Instructor2@gmail.com</td>
+            </tr>
+            <tr>
+               <td>3</td>
+               <td>Instructor 3</td>
+               <td>IT</td>
+               <td>Instructor3@gmail.com</td>
+            </tr>
+            <tr>
+               <td>4</td>
+               <td>Instructor 4</td>
+               <td>IT</td>
+               <td>Instructor4@gmail.com</td>
+            </tr>
+         </table>
+         <button class="btn" id="myBtn4">Add Instructors</button>
+         <!-- The Modal -->
+         <div id="myModal4" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h2>Add Instructor</h2>
+               </div>
+               <div class="modal-body">
+                  <form method="post" action="#">
+                     <div class="input-group">
+                        <input type="text" placeholder="Name" name="" required>
+                     </div>
+                     <div class="input-group">
+                        <input type="text" placeholder="Class" name="" required>
+                     </div>
+                     <div class="input-group">
+                        <input type="email" placeholder="Email" name="" required>
+                     </div>
+                        <button class="p-t-30" type="submit" name="submit">Submit</button>
+                        <span class="p-t-30">Cancel</span>
+
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <h3>UMKC</h3>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br><br><br>
+      <!-- ************************************FOOTER STARTS************************************* -->
+      <footer>
+         <p class="email text-center">
+            For general inquiries, please write to us at
+            <span><a href="mailto:info@finquiz.com">info@UMKC.com</a></span>
+         </p>
+         <div class="footer-row-bg">
+            <p>
+               © 2021 Curators of the University of Missouri | Disability Resources | DMCA Policy | Issues with this website?
+            </p>
+         </div>
+         </div>
+         </div>
+      </footer>
+      <!-- *****************************************FOOTER ENDS****************************** -->
+      <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/modal.js"></script>
+      <script type="text/javascript">
+         // Get the modal
+         var modal4 = document.getElementById("myModal4");
+
+         // Get the button that opens the modal
+         var btn4 = document.getElementById("myBtn4");
+
+         // Get the <span> element that closes the modal
+         var span3 = document.getElementsByClassName("close")[0];
+
+         // When the user clicks the button, open the modal
+         btn4.onclick = function() {
+           modal4.style.display = "block";
+
+         }
+
+         // When the user clicks on <span> (x), close the modal
+         span3.onclick = function() {
+           modal4.style.display = "none";
+           location.reload();
+         }
+
+         // When the user clicks anywhere outside of the modal, close it
+         window.onclick = function(event) {
+           if (event.target == modal4) {
+             modal4.style.display = "none";
+           }
+         }
+
+      </script>
+   </body>
+</html>

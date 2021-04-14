@@ -1,0 +1,287 @@
+head{
+    position: relative;
+}
+
+body {
+/*to be added to main css file*/
+
+    z-index: 1000;
+    /*setting bg image positioning and general alignment*/
+    position: absolute;
+    /*margin-left: 45%;*/
+    margin-top: 120px;
+    align-content: center;
+    /*UMKC Pathway format with image files*/
+    background-image: url("logo.png"), url("UM_UMKC_HEADER2_1.gif"), url("UMKC_BG1.jpg");
+    background-repeat: no-repeat;
+    background-size: 120px 50px, 100vw 80px, cover;
+    background-attachment:fixed;
+    /*these colors are similar to UMKC theme colors, not sure if they need to be used but saving code
+    for now just in case*/
+    --color-white: #FFFFFF;
+    --color-gray: #828282;
+    --color-blue: #5252ca;
+    --color-yellow: #ecd503;
+    --color-error:#cc3333;
+    --color-success: #4bb544;
+    /*text formatting for readability*/
+
+
+}
+
+input{
+
+    height: 20px;
+    font-weight:bold;
+}
+h2{
+
+    font-family: arial;
+    text-align: center;
+    background-position: center;
+    margin-bottom: 10%;
+    font-size: 30px;
+}
+
+.form__white-text{
+    color:white;
+    -webkit-text-stroke: 0.5px black;
+    font-weight:bold;
+    text-align:center;
+}
+
+.form-container{
+    border-color:var(--color-blue) var(--color-yellow);
+    border-width:10px;
+    border-style:outset;
+    padding:auto;
+    //width: 20vw;
+    //height: 30vh;
+    width: 250px;
+    max-width: 250px;
+    height:300px;
+    max-height:300px;
+    align-content: center;
+    //margin-left: 200%;
+    background-color:white;
+    font-family: arial;
+    text-align: center;
+    position: fixed;
+    top: 30%;
+    left: 42.5%;
+
+}
+
+.form-container-forgot{
+    border-color:var(--color-blue) var(--color-yellow);
+    border-width:10px;
+    border-style:outset;
+    padding:auto;
+
+    width: 15vw;
+    height: 35vh;
+    //width: 250px;
+    //max-width: 250px;
+    //height:300px;
+    //max-height:300px;
+    align-content: center;
+    //margin-left: 200%;
+    background-color:white;
+    font-family: arial;
+    text-align: center;
+    position: fixed;
+    top: 30%;
+    left: 42.5%;
+
+}
+
+.scnd__form-container{
+    border-color:var(--color-blue) var(--color-yellow);
+    border-width:10px;
+    border-style:outset;
+    padding:auto;
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 410px;
+    min-height:200px;
+    max-height:410px;
+    align-content: center;
+    background-color:white;
+    font-family: arial;
+    text-align: center;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+
+
+
+}
+
+.form-container,
+.form__input,
+.form__button{
+    font: 500 1rem arial;
+
+}
+
+footer{
+    color: white;
+    background-color:navy;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 90%;
+    left: 31%;
+
+}
+
+.form--hidden{
+    display: none;
+
+}
+
+.form > *:first-child{
+    margin-top: 0;
+}
+.form > *:last-child{
+    margin-bottom: 0;
+}
+
+.form__title{
+    text-align: center;
+    font-family: arial;
+    color: rgb(23, 0, 78);
+    -webkit-text-stroke:0%;
+    font-weight:lighter;
+    //position: fixed;
+    //Top: 30%;
+    //Left: 50%
+
+}
+.form__message{
+
+    text-align: center;
+    font-family: arial;
+}
+
+.form__message--success {
+    color: var(--color-success);
+}
+
+.form__message--error{
+    color: var(--color-error);
+}
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input{
+    display: block;
+    width: 90%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border: 1px solid var(--color-gray);
+    outline: none;
+    transition: background 0.2s, border-color 0.2s;
+    font-family: arial;
+    margin-left:10px;
+    margin-bottom: 2px;
+}
+
+.form__input:focus{
+    border-color: var(--color-blue);
+    border-width: 2px;
+    font-family: arial;
+
+}
+
+.form__input--error{
+    color:var(--color-error);
+    border-color: var(--color-error);
+
+}
+
+.form__input-error-message{
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.p-t-30{
+    width: 80%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: var(--color-blue);
+    margin: 2px;
+}
+
+.p-t-30:hover{
+    background:navy;
+
+}
+
+.p-t-30:active{
+    transform: scale(0.98)
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link{
+    color:rgb(131, 1, 163);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+.table{
+    border-color:var(--color-blue);
+    background-color:white;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    text-align: center;
+  }
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
