@@ -20,7 +20,7 @@ body {
     for now just in case*/
     --color-white: #FFFFFF;
     --color-gray: #828282;
-    --color-blue: #5252ca;
+    --color-blue: #0d47a1;
     --color-yellow: #ecd503;
     --color-error:#cc3333;
     --color-success: #4bb544;
@@ -50,16 +50,17 @@ h2{
     text-align:center;
     border-color:var(--color-yellow) var(--color-yellow);
     border-width:10px;
-    border-style:outset;
-    border-style:outset;
+    border-style:solid;
     padding:auto;
     background-color:blue;
 }
 
 .form-container{
-    border-color:var(--color-blue) var(--color-blue);
-    border-width:10px;
-    border-style:outset;
+    border-color: var(--color-blue) var(--color-blue);
+    border-width: 10px;
+
+    border-radius: 30px;
+    border-style:solid;
     padding:auto;
     //width: 20vw;
     //height: 30vh;
@@ -80,8 +81,9 @@ h2{
 
 .form-container-forgot{
     border-color:var(--color-blue) var(--color-blue);
-    border-width:10px;
-    border-style:outset;
+    border-width: 10px;
+    border-radius: 30px;
+    border-style:solid;
     padding:auto;
 
     width: 15vw;
@@ -104,7 +106,8 @@ h2{
 .scnd__form-container{
     border-color:var(--color-blue) var(--color-blue);
     border-width:10px;
-    border-style:outset;
+    border-radius: 30px;
+    border-style:solid;
     padding:auto;
     box-sizing: border-box;
     min-width: 200px;
@@ -219,10 +222,13 @@ footer{
     font-weight: bold;
     font-size: 1.1rem;
     color: white;
-    border: none;
+    //border: none;
     cursor: pointer;
     background: var(--color-blue);
     margin: 2px;
+    border-radius: 20px;
+    border-color: var(--color-gray);
+    border-style:solid;
 }
 
 .p-t-30:hover{
@@ -290,4 +296,28 @@ footer{
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s;
+}
+
+.navlinks{
+  position: fixed;
+  left: 0;
+  width: 100px;
+  height: 10%;
+  background-color:white;
+  border-color:var(--color-blue) var(--color-blue);
+  border-width: 5px;
+
+  border-radius: 20px;
+  border-style:outset;
+  padding:auto;
+}
+
+.navlinks ul{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size 25px;
+  padding-left: 40px;
+  box-sizing: border-box;
 }
