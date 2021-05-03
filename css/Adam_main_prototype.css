@@ -1,0 +1,45 @@
+head{
+    position: relative;
+}
+
+body {
+/*to be added to main css file*/
+
+    z-index: 1000;
+    /*setting UMKC Pathway format with image files*/
+    position: absolute;
+    align-items: center;
+    background-image: url("logo.png"), url("UM_UMKC_HEADER2_1.gif");
+    background-repeat:no-repeat, no-repeat;
+    background-size: 120px 50px, 1440px 80px;
+    /*these colors are similar to UMKC theme colors, not sure if they need to be used but saving code
+    for now just in case*/
+    --color-white: #FFFFFF;
+    --color-gray: #828282;
+    --color-blue: #5252ca; 
+    --color-yellow: #ecd503;
+    margin-left: 45%;
+    margin-top: 120px;
+    font-family: arial;
+    text-rendering: optimizeLegibility;
+
+}
+
+input{
+
+    height: 20px;
+    font-weight:bold;
+}
+h1{
+    text-align: center;
+    background-position: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+    
+}
+h2{
+    text-align: left;
+    margin-bottom: 1px;
+    font-size: 17px;
+    font-weight: bold;
+}
